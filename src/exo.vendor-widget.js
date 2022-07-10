@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         'vn': "Quét bằng ứng dụng hoặc nhấn vào thanh toán",
         'zh': "使用应用扫描付款，或点击付款"
     };
-
     // Select each EXO Vendor element
     const els = document.querySelectorAll('[data-exo-vendor]');
     for (let i = 0; i < els.length; ++i) {
@@ -39,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             text = langs[lang];
         }
-
         // Create the container
         let container = document.createElement("div");
         container.classList.add("exo-payment");
@@ -57,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
         container.onclick = function () {
             window.open("https://link.exohood.com/jWEpM5HcxP?vendor=" + code);
         };
-
         // Create the content
         let content = document.createElement("div");
         content.style.position = "relative";
@@ -101,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Remove the original element
         els[i].parentNode.removeChild(els[i]);
     }
-
     /**
      * Insert an element after another element in the DOM
      *
